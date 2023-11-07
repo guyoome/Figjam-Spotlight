@@ -1,0 +1,15 @@
+{
+  "api": "1.0.0",
+  "editorType": [
+    "figjam"
+  ],
+  "id": "1303728873297409117",
+  "name": "Spotlight",
+  "main": "build/main.js",
+  "ui": "build/ui.js",
+  "networkAccess": {
+    "allowedDomains": [
+      "none"
+    ]
+  }
+}

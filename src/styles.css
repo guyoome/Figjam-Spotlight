@@ -1,0 +1,117 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    padding: 0 1rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 36px;
+    padding: 0 1rem 0 0.5rem;
+    background-color: #ffffff;
+    top: 0;
+    position: sticky;
+    z-index: 1;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 36px;
+    cursor: pointer;
+    padding: 0 1rem;
+}
+
+.item:hover {
+    background-color: #F4ECFF;
+}
+
+.sort {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    padding: 4px 4px 4px 8px;
+}
+
+.sort:hover {
+    background-color: #F4ECFF;
+}
+
+.backButton {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.backButton:hover {
+    background-color: #F4ECFF;
+}
+
+.sticky {
+    width: 56px;
+    height: 56px;
+    background-color: #F4ECFF;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 0.4rem;
+    font-size: smaller;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0.6rem;
+}
+
+.stickyContainer {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    height: 64px;
+    flex-grow: 0;
+    gap: 0 1rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.stickyContainerItem {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.stickyContainer:hover {
+    background-color: #F4ECFF;
+}
+
+.emoji{
+    font-size: large;
+    padding-right: 0.5rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #E5E5E5;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #CCCCCC;
+}
