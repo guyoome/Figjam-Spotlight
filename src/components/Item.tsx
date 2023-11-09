@@ -1,13 +1,20 @@
 import {
     Bold,
     Text
-} from '@create-figma-plugin/ui'
+} from "@create-figma-plugin/ui";
 
-import { h } from 'preact'
+import { h } from "preact";
 
-import styles from '../styles.css';
+import styles from "../styles.css";
 
-function Item({ author, count, emoji, onClick }: { author: string, emoji: string, count: number, onClick: () => void }) {
+interface Props {
+    author: string,
+    emoji: string,
+    count: number,
+    onClick: () => void
+};
+
+const Item = ({ author, count, emoji, onClick }: Props) => {
     return (
         <div class={styles.item} onClick={() => onClick()}>
             <Text align="center">

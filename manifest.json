@@ -3,13 +3,8 @@
   "editorType": [
     "figjam"
   ],
-  "id": "1303728873297409117",
+  "id": "1303728207368939612",
   "name": "Spotlight",
   "main": "build/main.js",
-  "ui": "build/ui.js",
-  "networkAccess": {
-    "allowedDomains": [
-      "none"
-    ]
-  }
+  "ui": "build/ui.js"
 }

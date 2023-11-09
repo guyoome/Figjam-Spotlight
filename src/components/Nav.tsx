@@ -3,13 +3,20 @@ import {
     Text,
     IconChevronLeft32,
     Inline
-} from '@create-figma-plugin/ui'
+} from "@create-figma-plugin/ui";
 
-import { h } from 'preact'
+import { h } from "preact";
 
-import styles from '../styles.css';
+import styles from "../styles.css";
 
-function Nav({ author, count, emoji, onClick }: { author: string, count: number, emoji: string, onClick: () => void }) {
+interface Props {
+    author: string,
+    count: number,
+    emoji: string,
+    onClick: () => void
+};
+
+const Nav = ({ author, count, emoji, onClick }: Props) => {
     return (
         <div class={styles.nav}>
             <Inline space="extraSmall" style={{ display: "flex", alignItems: "center" }}>
@@ -17,7 +24,12 @@ function Nav({ author, count, emoji, onClick }: { author: string, count: number,
                     <IconChevronLeft32 />
                 </div>
                 <Text align="center">
-                    <Bold><span class={styles.emoji}>{emoji}</span>{author}</Bold>
+                    <Bold>
+                        <span class={styles.emoji}>
+                            {emoji}
+                        </span>
+                        {author}
+                    </Bold>
                 </Text>
             </Inline>
             <Text align="center">
@@ -25,6 +37,6 @@ function Nav({ author, count, emoji, onClick }: { author: string, count: number,
             </Text>
         </div>
     )
-}
+};
 
 export default Nav;

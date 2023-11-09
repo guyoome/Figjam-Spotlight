@@ -3,12 +3,18 @@ import {
     Text,
     IconArrowDown16,
     IconArrowUp16
-} from '@create-figma-plugin/ui'
-import { h } from 'preact'
+} from "@create-figma-plugin/ui";
 
-import styles from '../styles.css';
+import { h } from "preact";
 
-function Header({ isSortASC, onClick }: { isSortASC: Boolean, onClick: () => void }) {
+import styles from "../styles.css";
+
+interface Props {
+    isSortASC: Boolean,
+    onClick: () => void
+};
+
+const Header = ({ isSortASC, onClick }: Props) => {
     return (
         <div class={styles.header}>
             <Text>
@@ -27,6 +33,6 @@ function Header({ isSortASC, onClick }: { isSortASC: Boolean, onClick: () => voi
             </div>
         </div>
     )
-}
+};
 
 export default Header;

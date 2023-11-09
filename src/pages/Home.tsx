@@ -1,13 +1,18 @@
-import { h } from 'preact'
-import { useState } from 'preact/hooks'
+import { h } from "preact";
+import { useState } from "preact/hooks";
 
-import { Path } from '../types'
+import { Path } from "../types";
 
-import styles from '../styles.css';
-import Item from '../components/Item'
-import Header from '../components/Header'
+import styles from "../styles.css";
+import Item from "../components/Item";
+import Header from "../components/Header";
 
-function Home({ stickiesByAuthor, navigate }: { stickiesByAuthor: [string, StickyNode[], string][], navigate: (path: Path) => void }) {
+interface Props {
+    stickiesByAuthor: [string, StickyNode[], string][],
+    navigate: (path: Path) => void
+};
+
+const Home = ({ stickiesByAuthor, navigate }: Props) => {
     const [isSortASC, setIsSortASC] = useState<Boolean>(false);
 
     return (
